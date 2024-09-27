@@ -1,12 +1,12 @@
 const ProductData = [
 {
 "productName": "Product 1",
-"productPrice": 324,
+"productPrice": 32,
 "productImage": "https://via.placeholder.com/200x250"
 },
 {
 "productName": "Product 2",
-"productPrice": 345,
+"productPrice": 45,
 "productImage": "https://via.placeholder.com/200x250"
 },
 {
@@ -16,22 +16,22 @@ const ProductData = [
 },
 {
 "productName": "Product 4",
-"productPrice": 456,
+"productPrice": 56,
 "productImage": "https://via.placeholder.com/200x250"
 },
 {
 "productName": "Product 5",
-"productPrice": 876,
+"productPrice": 86,
 "productImage": "https://via.placeholder.com/200x250"
 },
 {
 "productName": "Product 6",
-"productPrice": 566,
+"productPrice": 66,
 "productImage": "https://via.placeholder.com/200x250"
 },
 {
 "productName": "Product 7",
-"productPrice": 9873,
+"productPrice": 173,
 "productImage": "https://via.placeholder.com/200x250"
 }
 ];
