@@ -10,7 +10,7 @@ const Cart = ({cart, setCart}) => {
   const total = () => cart.reduce((sum, item) => sum + item.productPrice, 0);
 
   return (
-    <div className="border mt-4 p-3 min-w-[160px] md:min-w-[240px]">
+    <div className="border mt-4 p-3 mx-auto sm:mx-0 min-w-[300px] sm:min-w-[260px] md:min-w-[300px] xl:min-w-[266px]">
        <h2 className="font-bold text-lg">Cart</h2>
        <hr className="my-4" />
        {cart.length === 0 && (
