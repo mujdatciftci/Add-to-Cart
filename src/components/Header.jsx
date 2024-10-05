@@ -1,5 +1,4 @@
 import CartIcon from "./CartIcon"
-import PropTypes from 'prop-types';
 
 const Header = ({cart}) => {
   return (
@@ -10,8 +9,4 @@ const Header = ({cart}) => {
   )
 }
 
-Header.propTypes = {
-  cart: PropTypes.array.isRequired,
-  setCart: PropTypes.func.isRequired,
-};
 export default Header

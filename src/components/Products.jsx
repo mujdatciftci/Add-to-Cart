@@ -1,6 +1,5 @@
 import ProductItem from "./ProductItem";
 import ProductData from "../ProductData";
-import PropTypes from 'prop-types';
 
 const Products = ({cart, setCart}) => {
   return (
@@ -9,10 +8,5 @@ const Products = ({cart, setCart}) => {
     </div>
   )
 }
-
-Products.propTypes = {
-  cart: PropTypes.array.isRequired,
-  setCart: PropTypes.func.isRequired,
-};
 
 export default Products;

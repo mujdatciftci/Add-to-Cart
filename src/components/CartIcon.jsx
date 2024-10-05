@@ -1,5 +1,4 @@
 import { IoMdCart } from "react-icons/io";
-import PropTypes from 'prop-types';
 const CartIcon = ({cart}) => {
 
   return (
@@ -11,8 +10,4 @@ const CartIcon = ({cart}) => {
   )
 };
 
-CartIcon.propTypes = {
-  cart: PropTypes.array.isRequired,
-  setCart: PropTypes.func.isRequired,
-};
 export default CartIcon
