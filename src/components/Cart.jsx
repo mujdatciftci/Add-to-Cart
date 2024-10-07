@@ -1,10 +1,15 @@
-const Cart = ({ cart, setCart }) => {
+import { useDispatch, useSelector } from "react-redux";
+import { cartActions } from "../store/store";
+
+const Cart = () => {
+  const cart = useSelector((state) => state.cart).value;
+  const { empty, filter } = cartActions;
+  const dispatch = useDispatch();
   const removeItems = () => {
-    setCart([]);
+    dispatch(empty());
   };
-  const removeItem = (indexFromButton) => {
-    const updatedCart = cart.filter((item, i) => i !== indexFromButton);
-    setCart(updatedCart);
+  const removeItem = (indexfromButton) => {
+    dispatch(filter(indexfromButton));
   };
   const total = () => cart.reduce((sum, item) => sum + item.productPrice, 0);
 
