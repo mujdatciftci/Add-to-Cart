@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { cartActions } from "../store/store";
+
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const { empty, filter } = cartActions;

@@ -7,7 +7,7 @@ const cart = useSelector((state) => state.cart);
 const {add} = cartActions;
 const dispatch = useDispatch();
   
-const addToCart = () => {
+const addToCart = (productItem) => {
   dispatch(add(productItem));
 }
   return (
