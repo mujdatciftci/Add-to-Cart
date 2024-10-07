@@ -1,8 +1,7 @@
 import { IoMdCart } from "react-icons/io";
 import { useSelector } from "react-redux";
 const CartIcon = () => {
-  const cart = useSelector((state) => state.cart);
-  console.log(cart);
+  const cart = useSelector((state) => state.cart).value;
   return (
        <div className="relative">
               <IoMdCart className="text-3xl" />

@@ -22,7 +22,7 @@ const cartSlice = createSlice({
 
 export const cartActions = cartSlice.actions;
 
-const store = configureStore({ reducer: cartSlice.reducer });
+const store = configureStore({ reducer: {cart: cartSlice.reducer} });
 export default store;
 
 

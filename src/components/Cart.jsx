@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { cartActions } from "../store/store";
 
 const Cart = () => {
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector((state) => state.cart).value;
   const { empty, filter } = cartActions;
   const dispatch = useDispatch();
   const removeItems = () => {
